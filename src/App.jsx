@@ -1,13 +1,15 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react';
+import { Container, Header } from 'semantic-ui-react';
 
-class App extends Component {
-  render() {
-    return (
-      <>
-        
-      </>
-    )
-  }
-}
+const App = () => {
+  const [greeting, setGreeting] = useState('Hello world from Johan')
 
-export default App
+  return (
+    
+      <Container>
+        <Header as="h1">{greeting} </Header>
+      </Container>
+    
+  )
+};
+export default App;
